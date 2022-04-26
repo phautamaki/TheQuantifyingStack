@@ -16,7 +16,7 @@ Note that because of the difference in measurement frequencies, the volume of rM
 
 ## Prerequisites
 * Minimum: iPhone, Oura Ring
-* Optional: A specialised app for inspecting and analysing HRV/RHR/recovery data is highly recommended, although the data and trends are visible also in Health. See also [Example Stack](#example-stack.
+* Optional: A specialised app for inspecting and analysing HRV/RHR/recovery data is highly recommended, although the data and trends are visible also in Health. See also [Example Stack](#example-stack).
 
 ## iOS Shortcuts
 The functionality consists of 3 separate [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) that you should install based on your needs:
