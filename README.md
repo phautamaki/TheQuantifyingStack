@@ -21,10 +21,11 @@ Note that because of the difference in measurement frequencies, the volume of rM
 ## iOS Shortcuts
 The functionality consists of 3 separate [shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios) that you should install based on your needs:
 
-1. [Sync Oura RHR & HRV (v2)](https://www.icloud.com/shortcuts/cd4567465a154b75a23f0bc0de9ce9e4)
+1. [Sync Oura RHR & HRV (v2)](https://www.icloud.com/shortcuts/cd4567465a154b75a23f0bc0de9ce9e4) or [Sync Oura RHR & HRV (v2 alternative)](https://www.icloud.com/shortcuts/75bca66fb9ba4c12b0eab080e48450a1). **The alternative version should be used in case ISO 8601 timezone offset is negative in your location (e.g. -04:00).**
     * Does the heavy lifting (syncing). Defaults to today (=previous night) but can also take a custom date as a parameter (utilised in history sync).
     * Can be called manually or via automation multiple times a day; in case the data has already been synced, the shortcut silently exits.
         * Protip: Hook this shortcut to the event of closing the Oura app by creating a personal automation from the Shortcuts app in order to make the data import as seamless as possible. Additionally, toggle the "Notify When Run" option off from the automation's settings to limit the unnecessary notifications to minimum (toggle available since iOS 15.4).
+    * The alternative version exists because of a bug in Shortcuts app timezone parsing. The faulty behavior manifests as all data written to Health with midnight timestamp (12 PM). If you are experiencing this problem, please try the alternative version that tries to circumvent the problem.
     * Note: You should have your [Oura Personal Access Token](https://cloud.ouraring.com/personal-access-tokens) at hand (or at clipboard) when importing this: it asks for the token during setup (although you can always update it later inside the shortcut).
 2. [Debug Sync Oura RHR & HRV (v2)](https://www.icloud.com/shortcuts/d94f3b90c0cf4b0e91973548705acf1e)
     * The **Sync Oura RHR & HRV** only alerts the user in case the data is not yet available in the Oura API so that the user knows to try again later. Otherwise it does its thing in the background. However, if the sync doesn't seem to work, **Debug Sync Oura RHR & HRV** can be used to make some sense of the return values gotten from the **Sync Oura RHR & HRV** shortcut. It's not much but it's honest work.
