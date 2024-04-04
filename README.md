@@ -1,3 +1,4 @@
+**!!! Unfortunately this is currently out of date and thus the provided shortcut will not work because it utilizes a deprecated Oura API endpoint. See issues for more details and alternative versions (at your own risk), which I do not take any responsibility of because I am not the author of any of those. This repo may also be updated at some point but for now, don't hold your breath !!!**
 # Oura to Apple Health Sync
 The following [iOS shortcuts](#ios-shortcuts) add the functionality for syncing [Oura Ring](https://ouraring.com/) heart rate variablility ([HRV](https://en.wikipedia.org/wiki/Heart_rate_variability)) and resting heart rate (RHR) data from the [Oura API](https://cloud.ouraring.com/docs/) to [Apple Health](https://www.apple.com/ios/health/). 
 
